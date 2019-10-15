@@ -12,5 +12,6 @@ class Barber < ActiveRecord::Base  #qw
 end 
 
 get '/' do
+	@barbers = Barber.all
 	erb :index
 end
